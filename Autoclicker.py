@@ -77,7 +77,7 @@ def gui():
     input_size= (5,5)
     layout = [
     [sg.Text("Delay"),sg.Text("H"), sg.Input(0,key = "-Input-1", size = input_size),sg.Text("M"),sg.Input(0,key = "-Input-2", size = input_size),sg.Text("S"),sg.Input(0.1,key = "-Input-3", size = input_size),sg.Text("Number of clicks (enter 0 for infinity)"),sg.Input(0,key = "-Input-4", size = input_size, expand_x = True)],
-    [sg.Text("Mouse button", expand_x = True),sg.Spin(["None", "Left", "Middle", "Right"], key = "Spin1"),sg.Text("Keyboard button"), sg.Input("None", key = "-Input-5", size = input_size),sg.Text("Failsafe (Recommended)"),sg.Spin(["Enabled","Disbled"],key = "Spin2"), sg.Text("Stop and Start key"),sg.Input("F6", key = "-Input-6", size = input_size)],
+    [sg.Text("Mouse button", expand_x = True),sg.Spin(["None", "Left", "Middle", "Right"], key = "Spin1"),sg.Text("Keyboard button"), sg.Input("None", key = "-Input-5", size = input_size),sg.Text("Failsafe (Recommended)"),sg.Spin(["Enabled","Disbled"],key = "Spin2"), sg.Text("Stop and Start key"),sg.Text("F6", key = "-Input-6", size = input_size)],
     [sg.Text("Mouse position (Leave empty for current mouse position)"),sg.Input("------>" , key = "-Input-7"),sg.Button("Detect Mouse postion", key = "Button")],
     [sg.Button("Start",key = "Button1", expand_x = True),sg.Button("Stop",key = "Button2", expand_x = True)]
     ]
